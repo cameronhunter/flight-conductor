@@ -1,0 +1,11 @@
+{
+  "name": "flight-conductor",
+  "version": "0.0.0",
+  "dependencies": {
+    "flight": "~1.0.7"
+  },
+  "devDependencies": {
+    "flight-jasmine": "~1.0.0",
+    "jasmine-jquery": "~1.5.0"
+  }
+}
