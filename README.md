@@ -32,8 +32,12 @@ define(['flight-conductor'], function(Conductor) {
   });
 
   // Listen for start and end events
-  $('video').on('conductor-footnote-start conductor-footnote-end', function(e, data) {
-    console.log(e, data.text);
+  $('video').on('conductor-footnote-start', function(e, data) {
+    $('.footnote').text(data.text).show();
+  });
+
+  $('video').on('conductor-footnote-end', function(e, data) {
+    $('.footnote').hide();
   });
 });
 ```
