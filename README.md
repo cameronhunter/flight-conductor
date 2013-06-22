@@ -14,9 +14,10 @@ define(['flight-conductor'], function(Conductor) {
 
   Conductor.attachTo('video', {
     timeline: [
-      {time: 1.3, message: 'Hello @flight world!'},
+      {time: 1.3, message: 'Hello @flight conductor world!'},
       {time: 2, event: 'conductor-map', location: {lat: 37.7577, lon: -122.4376}},
       {time: 3.5, data: {foo: 'bar!'}},
+      {start: 3.5, end: 4, event: 'conductor-footnote', text: 'Events can be one-off or have a start and end.'}
     ]
   });
 
@@ -28,6 +29,11 @@ define(['flight-conductor'], function(Conductor) {
   // Listen for custom conductor event
   $('video').on('conductor-map', function(e, data) {
     console.log(e, data.location);
+  });
+
+  // Listen for start and end events
+  $('video').on('conductor-footnote-start conductor-footnote-end', function(e, data) {
+    console.log(e, data.text);
   });
 });
 ```
