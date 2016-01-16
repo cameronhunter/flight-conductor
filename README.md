@@ -1,4 +1,6 @@
-# flight-conductor [![Build Status](https://secure.travis-ci.org/cameronhunter/flight-conductor.png)](http://travis-ci.org/cameronhunter/flight-conductor)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/) [![Build Status](https://secure.travis-ci.org/cameronhunter/flight-conductor.svg)](http://travis-ci.org/cameronhunter/flight-conductor)
+
+# flight-conductor
 
 A [Flight](https://github.com/twitter/flight) component for conducting events from an `audio` or `video` element. Inspired by [Mozilla's popcorn.js](http://popcornjs.org).
 
